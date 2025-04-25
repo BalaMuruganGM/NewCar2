@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeView</title>
+    <link rel="stylesheet" type="text/css" href="./HomeView2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="navLeft">
+            <img src="./images/logo.webp" class="navLogo" />
+            <div class="navButton">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About US</a>
+                <a href="./contact.html">Contact US</a>
+            </div>
+        </div>
+        <div class="navRight">
+            <a href="./Listing.html">Used Car</a>
+            <button><i class="fa-solid fa-square-phone"></i> Call</button>
+        </div>
+        <div class="resIcon" onclick="navpar()">
+            <i class="fa-solid fa-bars navBar"></i>
+            <i class="fa-solid fa-xmark xmarNav"></i>
+        </div>
+    </nav>
+    <!-- Responsive nav par start -->
+    <div class="responsiveNav">
+        <div class="resHome resCon">
+            <a href="./index.html">Home</a>
+            <i class="fa-solid fa-house-chimney"></i>
+        </div>
+        <div class="resAbout resCon">
+            <a href="./about.html">About US</a>
+            <i class="fa-regular fa-circle-user"></i>
+        </div>
+        <div class="resContact resCon">
+            <a href="./contact.html">Contact US</a>
+            <i class="fa-solid fa-envelope-circle-check"></i>
+        </div>
+        <div class="resUse resCon">
+            <a href="./Listing.html">Used Car</a>
+            <i class="fa-solid fa-car-side fa-flip-horizontal"></i>
+        </div>
+        <div class="resNumberTag">
+            <img src="./images/logo.webp" class="logo2" />
+            <button><i class="fa-solid fa-square-phone"></i> Call</button>
+        </div>
+    </div>
+    </div>
+    <!-- Responsive nav par is clouses -->
+    <!--over nav Clouses -->
+
+    <div class="viewContainer">
+        <div class="viewImg"></div> <!-- Images will be added dynamically -->
+
+        <div class="ViewContent">
+            <div class="leftViewContent">
+
+                <h3>Range Rover HSE Supercharged V6 3.0L</h3>  <!--rightBody h1-->
+                <div class="LVCD">
+                   <div class="LVCD-1">
+                       <p>Honda</p> <!--rightHead p-->
+                       <h1><i class="fa-solid fa-dollar-sign"></i> 120.00</h1> <!--rightHead h1-->
+                   </div>
+                   <div class="LVCD-2">
+                       <h1>2018 Honda City 1.3 i-VTEC</h1> <!--rightHead h1-->
+                   </div>
+                       <div class="LVCDbottom">
+                           <div class="LVCDbottom-1">
+                               <i class="fa-solid fa-gauge-simple-high"></i>  <!--rightSpeed i-->
+                               <p>1,20,520(ml)</p>    <!--rightSpeed p-->
+                           </div>
+                           <div class="LVCDbottom-2">
+                               <i class="fa-solid fa-gas-pump"></i> <!--rightGasoline i-->
+                               <p>Gasoline</p> <!--RightGasoline p-->
+                           </div>
+                           <div class="LVCDbottom-3">
+                               <i class="fa-solid fa-wrench"></i> <!--rightCC i-->
+                               <p>2,350(cc)</p> <!--rightCC p-->
+                           </div>
+                       </div>
+
+                </div>
+
+
+        </div> <!--closes-->
+              
+
+
+            <div class="rightViewContent">
+
+                <div class="rightViewBox">
+                    <div class="rvBoxHead">
+                        <h4>What's included</h4>
+                        <div class="rvBoxHeadImg">
+                            <img src="./images/logo.webp"/>
+                        </div>
+                    </div> <!--RVHead Clouses-->
+
+                    <div class="rvBoxBody">
+                        <div class="rvB-1">
+                            <img src="./Logos/freeWaranty.png"/>
+                            <p> 
+                                <span>Free</span>
+                                <span>Warranty</span>
+                            </p>
+                        </div>
+
+                    <div class="rvB-1">
+                            <img src="./Logos/certified.png"/>
+                            <p> 
+                                <span>Pre-inspected</span>
+                                <span>& certified</span>
+                            </p>
+                        </div>
+
+                        <div class="rvB-1">
+                            <img src="./Logos/Expert.png"/>
+                            <p> 
+                                <span>Expert</span>
+                                <span>Assistance</span>
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <button>I'm Interested</button>
+            </div>
+
+        </div> <!--ViewContent Closes-->
+
+        <div class="viewBody">
+            <div class="leftViewBody">
+                <div class="carReview">
+                    <div class="type-1">
+                        <div class="r1Main">
+                            <p>Body Type</p>
+                            <h3 class="R1carbodyType">SUV</h3>
+                        </div>
+    
+                        <div class="r1Main">
+                            <p>Doors</p>
+                            <h3 class="R1carDoor">4 door</h3>
+                        </div>
+                        <div class="r1Main">
+                            <p>Seating Capacity</p>
+                            <h3 class="R1carSeater">5 Seater</h3>
+                        </div>
+                        <div class="r1Main">
+                            <p>Horsepower</p>
+                            <h3 class="R1carpower">400 - 499 HP</h3>
+                        </div>
+                        <div class="r1Main">
+                            <p>Transmission Type</p>
+                            <h3 class="R1carAutomation">Automatic Transmission</h3>
+                        </div>
+                        <div class="r1Main">
+                            <p>Target Market</p>
+                            <h3 class="R1carTarget">UAE (can be exported)</h3>
+                        </div>
+                    </div>
+    
+                    <div class="type-2">
+    
+                        <div class="r2main">
+                            <p>Exterior Color</p>
+                            <h3 class="R1carColor">White</h3>
+                        </div>
+    
+                        <div class="r2main">
+                            <p>Interior Color</p>
+                            <h3 class="R1interColor">Beige</h3>
+                        </div>
+                        <div class="r2main">
+                            <p>Fuel Type</p>
+                            <h3 class="R1fuelType">Petrol</h3>
+                        </div>
+    
+                        <div class="r2main">
+                            <p>No. of Cylinders</p>
+                            <h3 class="R1cylinder">6</h3>
+                        </div>
+    
+                        <div class="r2main">
+                            <p>Warranty</p>
+                            <h3 class="R1carWarranty">Does not apply</h3>
+                        </div>
+                    </div>
+                </div> <!--carView Clouses-->
+                
+                <h1 class="cutomerFeatureH1">Features</h1>
+                <div class="cutomerFeature">
+                    <div class="cf">
+                        <img src="./Logos/cf-1.webp"/>
+                    </div>
+
+                    <div class="cf">
+                        <img src="./Logos/cf-2.webp"/>
+                    </div>
+
+                    <div class="cf">
+                        <img src="./Logos/cf-3.webp"/>
+                    </div>
+
+                    <div class="cf">
+                        <img src="./Logos/cf-4.webp"/>
+                    </div>
+
+                    <div class="cf">
+                        <img src="./Logos/cf-5.webp"/>
+                    </div>
+
+                    <div class="cf">
+                        <img src="./Logos/cf-6.webp"/>
+                    </div>
+                </div> <!--customer Feture Clouses-->
+
+                <div class="carDetails">
+                    <h1>
+                        AUTOBIOGRAPHY SUPERCHARGED RANGE ROVER SPORT || GCC ||
+                         TOP RANGE || ACCIDENT FREE || LOW MILES 107k
+                    </h1>
+                    <p class="carPara">ALHOOT MOTORS DEALS WITH GCC CARS ONLY!
+                    </br>Trusted CARS dealership in the UAE.</p>
+                    <p>"Customer first" approach before, during and after sale ✅</p>
+                    <div class="cardetails-Service">
+                        <p>inclusiv</p>
+                        <ul>
+                            <li>1 Free Service</li>
+                            <li>1 Detailing & Car Care</li>
+                            <li>1 Year Free Insurance</li>
+                          </ul>
+                        <p>(FOR CASH DEALS ONLY)</p>
+                    </div>
+                    <div class="carLineDiv">
+                        <p>- Automatic Footsteps</p>
+                        <p>- Rear Screens</p>
+                        <p>- Head Up Display</p>
+                        <p>- Highest Category</p>
+                        <p>- Recently Serviced</p>
+                        <p>- Mechanical Issue Free</p>
+                        <p>- 4 New Condition Tires</p>
+                        <p>- Original Keys</p>
+                        <p>- GCC</p>
+                        <p>- Only 107k miles Driven</p>
+                        <p>- Full Service</p>
+                        <p>- Guaranteed Accident Free</p>
+                        <p>- Clean & Neat Inside/Outside</p>
+                        <p>- Single Owner</p>
+                        <p>- Major Service Done</p>
+                        <h6 class="carLine">-----------------------------------</h6>
+                        <p>We are Open Saturday to Thursday from 9:00am to 10pm | Friday from 4:00pm to 10pm</p>
+                        <h6 class="carLine">-----------------------------------------------</h6>
+                        <p>For more details, please contact us directly</p>
+
+                        <div class="showNumber">
+                            <div class="showNumber-1">
+                                <h5>Show Number</h5>
+                                <p>-Name</p>
+                            </div>
+                            <div class="showNumber-2">
+                                <h5>Show Number</h5>
+                                <p>- Name</p>
+                            </div>
+                        </div> <!--Show number finish-->
+
+
+                        <p class="carAd">Address: Souq Al Haraj, Showroom 58,
+                            Along Mohammad Bin Zayed Road, Sharjah, 
+                            United Arab Emirates</p>
+
+
+                        <p>Find us on Google Maps "ALHOOT MOTORS" </p>
+                        <p>https://maps.app.goo.gl/9DwNFydePrRXmt7b6 </p>
+
+                        <h6 class="carLine">-----------------------------------------------</h6>
+
+                        <p>Selling Your Car to Us:</p>
+                        <p>We accept GCC cars for trade in, our team will be more than happy to help.</p>
+                        <h6 class="carLine">-----------------------------------------------</h6>
+                        <p>Follow us on our Social Media Pages</p>
+                        <p>https://shorturl.at/JLPX7</p>
+                        <p>Instagram: @alhoot.motors</p>
+                        <p>https://shorturl.at/bLQS4</p>
+                        <p>Tiktok: @alhoot.motors</p>
+                        <p>https://shorturl.at/exL35</p>
+                        <h6 class="carLine">-----------------------------------------------</h6>
+                        <div class="emtype">
+                            <p>We do Bank Finance also</p>
+
+                            <ul>
+                                <li>- Employed</li>
+                                <li>- Self-Employed</li>
+                                <li>- Company</li>
+                            </ul>
+                        </div>
+                        <p>"DON'T DREAM IT, DRIVE IT with ALHOOT MOTORS"</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!--ViewBody Clouses-->
+
+        <div class="viewBottom">
+             <h1>Other Similar Cars</h1>
+
+             <div class="bottomBody">
+                
+                
+             <div class="rightTag">   <!--bottomm Tag one start-->
+                <div class="rightImgTag">
+                    <img src="./images/f1.jpg" />
+                    <img src="./images/f1.1.jpg" />
+                    <img src="./images/f1.2.jpg" />
+                    <img src="./images/f1.4.jpg" />
+                </div>
+
+                <div class="righTagContent"> 
+                    <div class="rightC">
+                        <p>Chevrolet Traverse LT</p>
+                        <p>RS V6 3.6L</p>
+                        <p><i class="fa-solid fa-gauge-simple-high"></i> 124.000KM</p>
+                    </div>
+                    <div class="LeftC">
+                        <p class="leftCHead-1">AED 90.500</p>
+                        <p>AED 96.500</p>
+                        <p>854/month</p>
+                    </div>
+                </div>
+            </div> <!--bottomtag one Clouse-->
+
+
+            <div class="rightTag">   <!--bottomm Tag one start-->
+                <div class="rightImgTag">
+                    <img src="./images/f1.jpg" />
+                    <img src="./images/f1.1.jpg" />
+                    <img src="./images/f1.2.jpg" />
+                    <img src="./images/f1.4.jpg" />
+                </div>
+
+                <div class="righTagContent"> 
+                    <div class="rightC">
+                        <p>Chevrolet Traverse LT</p>
+                        <p>RS V6 3.6L</p>
+                        <p><i class="fa-solid fa-gauge-simple-high"></i> 124.000KM</p>
+                    </div>
+                    <div class="LeftC">
+                        <p class="leftCHead-1">AED 90.500</p>
+                        <p>AED 96.500</p>
+                        <p>854/month</p>
+                    </div>
+                </div>
+
+            </div> <!--bottomtag one Clouse-->
+
+            <div class="rightTag">   <!--bottomm Tag one start-->
+                <div class="rightImgTag">
+                    <img src="./images/f1.jpg" />
+                    <img src="./images/f1.1.jpg" />
+                    <img src="./images/f1.2.jpg" />
+                    <img src="./images/f1.4.jpg" />
+                </div>
+
+                <div class="righTagContent"> 
+                    <div class="rightC">
+                        <p>Chevrolet Traverse LT</p>
+                        <p>RS V6 3.6L</p>
+                        <p><i class="fa-solid fa-gauge-simple-high"></i> 124.000KM</p>
+                    </div>
+                    <div class="LeftC">
+                        <p class="leftCHead-1">AED 90.500</p>
+                        <p>AED 96.500</p>
+                        <p>854/month</p>
+                    </div>
+                </div>
+            </div> <!--bottomtag one Clouse-->
+
+            <div class="rightTag">   <!--bottomm Tag one start-->
+                <div class="rightImgTag">
+                    <img src="./images/f1.jpg" />
+                    <img src="./images/f1.1.jpg" />
+                    <img src="./images/f1.2.jpg" />
+                    <img src="./images/f1.4.jpg" />
+                </div>
+
+                <div class="righTagContent"> 
+                    <div class="rightC">
+                        <p>Chevrolet Traverse LT</p>
+                        <p>RS V6 3.6L</p>
+                        <p><i class="fa-solid fa-gauge-simple-high"></i> 124.000KM</p>
+                    </div>
+                    <div class="LeftC">
+                        <p class="leftCHead-1">AED 90.500</p>
+                        <p>AED 96.500</p>
+                        <p>854/month</p>
+                    </div>
+                </div>
+
+            </div> <!--bottomtag one Clouse-->
+
+            <div class="rightTag">   <!--bottomm Tag one start-->
+                <div class="rightImgTag">
+                    <img src="./images/f1.jpg" />
+                    <img src="./images/f1.1.jpg" />
+                    <img src="./images/f1.2.jpg" />
+                    <img src="./images/f1.4.jpg" />
+                </div>
+
+                <div class="righTagContent"> 
+                    <div class="rightC">
+                        <p>Chevrolet Traverse LT</p>
+                        <p>RS V6 3.6L</p>
+                        <p><i class="fa-solid fa-gauge-simple-high"></i> 124.000KM</p>
+                    </div>
+                    <div class="LeftC">
+                        <p class="leftCHead-1">AED 90.500</p>
+                        <p>AED 96.500</p>
+                        <p>854/month</p>
+                    </div>
+                </div>
+            </div> <!--bottomtag one Clouse-->
+
+        </div>
+
+    </div>
+
+
+                <!-- Footer Start -->
+                <footer>
+                    <div class="footerhead">
+                        <a class="fContect">Contact us</a>
+                        <a>|</a>
+                        <a>Search</a>
+                        <a>|</a>
+                        <a>Announcement</a>
+                        <a>|</a>
+                        <a class="fLegal">legal notice</a>
+                        <a>|</a>
+                        <a>Help</a>
+                        <a>|</a>
+                        <a>Site Map</a>
+                    </div>
+                    <div class="footerLine"></div>
+                    <div class="FooterContent">
+                        <div class="footerOne footerText">
+                            <a class="footerTextHead">TOP SECTIONS</a>
+                            <a>Price list</a>
+                            <a>ebook</a>
+                            <a>Find a Dealer</a>
+                            <a>Test Drive</a>
+                            <a>Brochure</a>
+                            <a>Exchange</a>
+                        </div>
+        
+                        <div class="footerTwo footerText">
+                            <a class="footerTextHead">QUICK LINKS</a>
+                            <a>About Us</a>
+                            <a>Feedback/Queries</a>
+                            <a class="footerTextHead">MORE</a>
+                            <a>Health & Safety Policy</a>
+                            <a>Start Your Impossible</a>
+                        </div>
+        
+                        <div class="footerThree footerText">
+                            <a class="footerTextHead">MEDIA</a>
+                            <a>Press Release</a>
+                            <a>Articles/Reviews</a>
+                            <a>Spokespersons Images</a>
+                            <a>Customer Stories</a>
+                            <a>Awards</a>
+                            <a>Dream Car Contest</a>
+                        </div>
+        
+                        <div class="footerFive footerText">
+                            <a class="footerTextHead">FOLLOW Social</a>
+                            <div class="footerIcon">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+        
+                        <div class="footerSix footerText">
+                            <!-- <h1 class="footerTextHead">AutoDrive</h1> -->
+                            <img src="./images/logo.webp" />
+                            <div class="footerLogos">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, incidunt omnis.
+                                    Quibusdam explicabo culpa tempora commodi nobis aliquam voluptates ut quaerat libero,
+                                    vitae placeat, quis ea modi voluptas facere autem!</p>
+                            </div>
+                        </div>
+                </footer>
+                <!-- Footer Clouses -->
+        
+    </div> <!--viewContainer Clouses-->
+
+    <script src="./script.js"></script>
+
+  
+<script>
+        window.onload = function () {
+            const car = JSON.parse(localStorage.getItem("carDetails2"));
+            
+            if (car) {
+                // Set text content
+                document.querySelector('.leftViewContent h3').innerText = car.title;
+                document.querySelector('.LVCD-1 p').innerText = car.brand;
+                document.querySelector('.LVCD-1 h1').innerHTML = car.price;
+                document.querySelector('.LVCD-2 h1').innerText = car.title;
+                document.querySelector('.LVCDbottom-1 p').innerText = car.mileage;
+                document.querySelector('.LVCDbottom-2 p').innerText = car.fuel;
+                document.querySelector('.LVCDbottom-3 p').innerText = car.cc;
+        
+                // Add images
+                const imageContainer = document.querySelector('.viewImg');
+                imageContainer.innerHTML = "";
+                car.images.forEach(src => {
+                    const img = document.createElement("img");
+                    img.src = src;
+                    imageContainer.appendChild(img);
+                });
+            }
+        };
+
+
+
+        
+
+
+        // Other page content start
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const fields = [
+    "carbodyType", "carDoor", "carSeater", "carpower", "carAutomation", "carTarget",
+    "carColor", "interColor", "fuelType", "cylinder", "carWarranty"
+  ];
+
+  fields.forEach(field => {
+    const data = localStorage.getItem(field);
+    const target = document.querySelector(`.R1${field}`);
+    if (data && target) {
+      target.textContent = data;
+    }
+  });
+
+  // Optional: clear storage after loading
+  // localStorage.clear();
+});
+
+</script>
+
+
+
+</body>
+
+</html>

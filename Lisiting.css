@@ -1,0 +1,1646 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+/* NavPar Style Start */
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding: 5px 2% 5px 2%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    justify-content: space-between;
+}
+
+nav .navLogo{
+    width: 140px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+.navLeft{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.navButton{
+    display: flex;
+    gap: 30px;
+    color: black;
+}
+
+.navButton a , .navRight a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+.navRight{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.navRight button{
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    background-color:crimson;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+    color: #fff;
+}
+
+
+.resIcon{
+    display: none !important;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.resIcon .xmarNav{
+    display: none;
+}
+
+
+.responsiveNav{
+    width: 40%;
+    height:400px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 30px 10px 20px;
+    position: absolute;
+    top:60px;
+    left:-100%;
+    transition: all 0.30s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.resCon{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.resCon a{
+    text-decoration: none;
+    color: black;
+}
+
+.resNumberTag{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.resNumberTag button{
+    width: 80px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.resNumberTag img{
+    width: 100px;
+    height: 40px;
+}
+
+
+.responsiveNav{
+    display:none;
+}
+
+/* nave response start */
+
+@media screen and (max-width:900px) {
+    .navButton , .navRight{
+        display: none;
+    }
+
+    .resIcon{
+        display: flex !important;
+    }
+
+    nav{
+        width: 100%;
+        border-radius:0px;
+        background-color: #fff;
+        margin-top:0;
+        padding: 5px 25px 5px 20px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        left: -100%;
+    }
+    
+}
+
+
+/* nav response clouses */
+
+/* NavPar Style Clouses */
+
+.ListContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.listHead{
+    width: 100%;
+    background: linear-gradient(180deg, #0037A6 0%, #131551 71.09%);
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding: 2% 3%;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.listHead h1{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 800px;
+}
+
+.listHead p{
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.readSpan{
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.hideSpan{
+    display: none;
+    color: #fff;
+}
+
+.listScroll{
+    width:90%;
+    height:130px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: -55px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* padding: 0px 30px; */
+}
+
+.ListScrollBox{
+    display: flex;
+    gap: 30px;
+    width: 200%;
+    position: absolute;
+    left:0;
+    
+}
+
+.ListScrollImg{
+    height: 130px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+
+.ListScrollBox img{
+    height:70px;
+    width: 70px;
+}
+
+
+.lisrAroows{
+    display:flex;
+    justify-content: space-between;
+    font-size: 30px;
+    position: absolute;
+    /* top: 30%; */
+    width:98%;
+    color: yellow;
+    bottom: 10px;
+}
+
+.lisrAroows i{
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    /* padding: 10px; */
+    /* background-color: red; */
+}
+
+.ListbodyHead{
+    width: 100%;
+    font-size:36px;
+    font-weight: 700;
+    color: #1c1d26;
+    padding: 10px;
+   
+}
+
+.ListBody{
+    width: 100%;
+    display: flex;
+    padding: 10px;    
+}
+
+.leftBody{
+    width: 35%;
+    /* background-color: blue; */
+    min-height: 80vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid lightgray;
+    height:70vh;
+    overflow-y: scroll;
+}
+
+.leftBody::-webkit-scrollbar{
+    width: 1px;
+}
+
+.Sort{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Sort select{
+    width: 150px;
+    padding:10px 25px 10px 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.Sort h5{
+    font-weight:600;
+    font-size: 20px;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.search input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding-right: 20px;
+    border: 1px solid lightgray;
+    outline:none;
+}
+
+.search i{
+    position:absolute;
+    right: 15px;
+    font-size: 25px;
+    color: gray;
+}
+
+.package{
+    display: flex;
+    gap: 20px;
+}
+
+.package button{
+    padding: 10px 20px 10px 20px;
+    border: unset;
+    border-radius: 20px;
+    background-color:#fff;
+    transition: all 0.30s;
+    border: 1px solid transparent;
+}
+
+.package button:hover{
+    border: 1px solid #0454F2;
+    color: #0454F2;
+}
+
+
+.priceList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.price , .milage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price input , .milage input{
+    height: 5px;
+}
+
+.priceHead , .milageHead{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.priceHead h6 , .milageHead h6{
+    font-size: 14px;
+    /* font-weight: 500; */
+    color:#1C1D26;
+}
+
+.priceHead h1 i , .milageHead h1 i{
+    font-size: 13px;
+}
+
+.priceHead p, .milageHead p{
+    font-size: 16px;
+    color:#727272;
+}
+
+/* BodyType Start */
+
+    .BodyType{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .bodyTypeImg{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+    }
+
+    .bodyType-1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .bodyType-1 p{
+        font-size: 13px;
+        color:#727272;
+    }
+
+
+    .BodyType h6{
+        color: #1C1D26;
+        font-size: 14px;
+    }
+
+/* BodyType clouses */
+
+/* All left body h6 tag start */
+
+    .leftBody h6{
+        color: #1C1D26;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+/* All left body h6 tag clouses */
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.featuresBut{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.featuresBut button{
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E9E9EA;;
+    background: white;
+    border-radius: 40px;
+    padding: 3px 15px;
+    color:#727272;
+    transition: all 0.30s;
+}
+
+.featuresBut button:hover{
+    border: 1px solid #0454F2;
+    color: #0454F2;
+}
+
+
+
+.tran{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.tranBut{
+    display: flex;
+    gap: 20px;
+}
+
+.tranBut button{
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E9E9EA;;
+    background: white;
+    border-radius: 40px;
+    padding: 3px 15px;
+    color:#727272;
+    transition: all 0.30s;
+}
+
+
+.tranBut button:hover{
+    border: 1px solid #0454F2;
+    color: #0454F2;
+}
+
+.budgest{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.budgestHead{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+
+.budgesBut{
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;    
+}
+
+.budgesBut button{
+    height: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E9E9EA;;
+    background: white;
+    border-radius: 40px;
+    padding: 3px 15px;
+    color:#727272;
+    transition: all 0.30s;
+}
+
+.budgesBut button:hover{
+    border: 1px solid #0454F2;
+    color: #0454F2;
+}
+
+/* rightSide start*/
+
+    .rightSide{
+        width:100%;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        /* flex-wrap: 300px 300px 300px; */
+        height: 100vh;
+        padding:0px 10px;
+        gap: 25px;
+        overflow-y: scroll;
+    }
+
+    .rightSide::-webkit-scrollbar{
+        width: 0px;
+    }
+
+
+
+
+    .rightTag{
+        width:290px;
+        height: 310px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+        gap: 30px;
+        border: 1px solid lightgray;
+        position: relative;
+        padding-bottom:20px;
+    }
+
+    .rightImgTag{
+        width:400%;
+        height: 60%;
+        display: flex;
+        overflow: hidden;
+        position:absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .rightImgTag img{
+        width:25%;
+        height: 100%;
+    }
+
+
+    .righTagContent{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .rightC , .LeftC{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightC p{
+        color:#1C1D26;
+        font-size:14px;
+        font-weight: 400px;
+    }
+
+    .leftC p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #1C1D26;
+    }
+
+    .LeftC .leftCHead-1{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+    .formInformation{
+        display: none;
+    }
+    
+
+/*  rightSide clouses*/
+
+/* Logo Page CSS Start */
+
+    /* Logo page Start */
+
+    .LogoPage{
+        width: 90%;
+        /* height: 110vh; */
+        background-color: white;
+        border-radius: 20px;
+        margin: 4% 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding:40px 0px;
+        gap: 40px;
+        position: relative;
+    }
+
+    .LogoPageHead{
+        /* font-size:20px; */
+        text-align: center;
+        color: #141652;
+        line-height: 45px;
+    }
+
+    .LogoOption{
+        display: flex;
+        width:80%;
+        justify-content: space-between;
+    }
+
+    .LogoOption button{
+        padding:10px 20px;
+        border: unset;
+        /* border: 2px solid blue; */
+        border-radius: 20px;
+        border: 1px solid gray;
+    }
+
+    .LogoOption button:hover{
+        border: 1px solid blue;
+        color: blue;
+    }
+
+
+    .LogoScrollTag{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .LogoScroll{
+        position: absolute;
+        width:400%;
+        min-height: 70vh;
+        overflow: hidden;
+        display: flex;
+        left: 0px;
+    }
+
+    .Logos{
+        display: grid;
+        min-height: 70vh;
+        padding-top: 10px;
+        grid-template-columns: auto auto auto auto;
+        width:25%;
+        gap: 30px;
+        justify-content: center;
+        border: unset;
+    }
+
+    .Logos-1{
+        width: 250px;
+        height:160px;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    }
+
+    .Logos-1 img{
+        width:70px;
+        height:60px;
+    }
+
+    .LogosTag-1{
+        display:grid;
+    }
+
+    .LogoArrow{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        width:100%;
+        padding: 0px 30px;
+        justify-content: space-between;
+    }
+
+    .LogoArrow i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .pulliTag{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .pulliTag p{
+        height: 10px;
+        width: 10px;
+        border: 1px solid blue;
+        border-radius: 50%;
+    }
+
+    .pulli-1{
+        background-color: blue;
+    }
+
+    /* .LogoScrollTag , .pulliTag{
+        display: none;
+    } */
+
+
+    /* Lpopular Tag Start */
+
+    .Lpopular{
+        
+        width:80%;
+        height: 300px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+
+    /* .LpopularBody-2 , .LpopularBody-3 , .LpopularBody-4{
+        display: none;
+    } */
+
+    .LpopularScroll{
+        width: 400%;
+        height: 100%;
+        display: flex;
+        position:absolute;
+        left: 0px;
+    }
+
+    .LpopularBody-1 , .LpopularBody-2{
+        width:25%;
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 38px 20px;
+        justify-content:space-between;
+    }
+
+    
+
+    .LpopularBody a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        border: 2px solid transparent;
+        transition: all 0.30s;
+    }
+
+    .LpopularBody a:hover{
+        border: 2px solid #033f63;
+        color: #033f63;
+        background-color: transparent;
+    }
+
+
+    .LpopularArrow{
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .LpopularArrow i{
+        cursor: pointer;
+        font-size: 25px;
+
+    }
+
+    /* Lpopular Tag closes */
+
+
+    /* .Logos , .LogoArrow , .pulliTag , .LogoScrollTag{
+        display: none;
+    } */
+
+    .LPrice{
+        width: 100%;
+        justify-content:space-around;
+        padding: 20px 6%;
+        display: grid;
+        gap: 50px;
+
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .LPrice a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+
+    .LPrice{
+        display: none;
+    }
+
+    .Lbody{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        min-height: 50vh;
+        gap: 20px;
+        justify-content: space-between;
+        width:75%;
+        /* padding: 0px 10%; */
+    }
+
+    .Lbody-1{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: baseline;
+        justify-content: center;
+        width: 120px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .Lbody-1 p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Lbody-1 img{
+        width:100%;
+        height:70px;
+    }
+
+    .Lbody{
+        display: none;
+    }
+
+    .Lseats{
+        width: 85%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .Lseats a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px;
+        /* border: 1px solid lightgray; */
+    }
+
+    .Lseats{
+        display: none;
+    }
+
+/* Logo Page clouses */
+
+/* Logo Page CSS clouses */
+
+
+/* Responses Start */
+
+
+    @media screen and (max-width:1300px) {
+        .leftBody{
+            display: none;
+        }
+
+        .ListbodyHead{
+            margin-bottom: 25px;
+        }
+
+        .rightSide{
+            width: 100%;
+        }
+
+        .rightTag{
+            width: 350px;
+            height: 310px;
+        }
+    }
+
+    @media screen and (max-width:1150px) {
+        
+        .rightTag{
+            width: 320px;
+            height: 310px;
+        }
+    }
+
+
+    @media screen and (max-width:1100px) {
+        
+        .listHead h1{
+            font-size: 30px;
+        }
+
+        .listHead p{
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        
+    .readSpan{
+        font-size: 16px;
+        }
+    
+        .ListScrollImg{
+            height: 110px;
+            width: 130px;
+        }
+        
+        .ListScrollBox img{
+            height:50px;
+            width: 50px;
+        }
+
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1050px) {
+        
+    .rightTag{
+        width: 310px;
+        height: 300px;
+    }
+
+    .rightSide{
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .rightSide{
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .ListbodyHead{
+        margin-bottom:5px;
+        font-size: 25px;
+    }
+
+
+}
+
+@media screen and (max-width:700px) {
+    .rightSide{
+        grid-template-columns: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .ListScrollBox{
+        width: unset;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .listHead{
+        gap: 10px;
+        min-height: 45vh;
+    }
+
+    .listHead h1{
+        font-size: 25px;
+    }
+
+    .listHead p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    
+    .readSpan{
+        font-size: 14px;
+    }
+
+    .ListScrollImg{
+        height: 90px;
+        width: 100px;
+    }
+    
+    .ListScrollBox img{
+        height:40px;
+        width: 40px;
+    }
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .ListScrollBox{
+        gap: 10px;
+    }
+
+    .listHead{
+        min-height: 50vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ListScrollImg{
+        width: 70px;
+        height: 70px;
+    }
+
+    .ListScrollImg img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .ListScrollBox{
+        bottom: 20px;
+    }
+
+    .lisrAroows{
+        bottom: -10px;
+    }
+
+    .lisrAroows i {
+        height: 25px;
+        width: 25px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .listHead h1{
+        font-size: 20px;
+    }
+
+    .listHead p{
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .listHead{
+        min-height: 40vh;
+    }
+
+    .lisrAroows i {
+        height: 20px;
+        width: 20px;
+        font-size: 11px;
+    }
+
+
+    .ListScrollBox{
+        bottom: 25px;
+    }
+
+
+    .ListScrollImg{
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+
+/* Responses Clouses */
+
+
+    
+/* footer page Start */
+
+    /* footer is start */
+
+    footer{
+        width: 100%;
+        background-color:#141652;
+        background-color: #333333;
+        min-height: 400px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 20px 5%;
+        margin-top: 50px;
+    }
+
+    .footerhead{
+        display: flex;
+        gap: 20px;
+        color: #cccccc;
+    }
+
+    .footerLine{
+        height: 2px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .FooterContent{
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+    }
+
+    .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerTextHead{
+        color: #ffffff;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    .footerSix{
+        margin-top: 8%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+    }
+
+    .footerLogos{
+        display: flex;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+
+    .footerIcon{
+        font-size: 25px;
+        display: flex;
+        gap: 10px;
+    }
+
+/* footer is clouses */
+
+/* Resposive Start */
+
+/* footer Responsive Start */
+
+    @media screen and (max-width:1100px) {
+        footer{
+            padding: 20px 2%;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .footerSix{
+            margin-top:1%;
+        }
+
+        footer{
+            padding: 20px 6%;
+        }
+
+        .FooterContent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 8%;
+        }
+    }
+
+    @media screen and (max-width:850px){
+       
+        .footerhead{
+            justify-content: center;
+        }
+
+        .footerhead a{
+            font-size: 12px;
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .FooterContent{
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+        }
+
+        .footerhead a{
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .footerhead{
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width:400px) {
+        .FooterContent{
+            grid-template-columns: auto;
+            row-gap: 5%;
+        }
+    }
+
+/* footer Responsive clouses */
+
+
+/* footer page clouses */
+
+/* Footer Page is Clouses */
+
+/* Logo Page Responsive Start */
+
+@media screen and (max-width:1300px) {
+    .Lseats{
+        width: 90%;
+        gap: 10px;
+    }
+
+    .rightTag{
+        width: 290px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:1250px) {
+    .Logos-1{
+        width: 200px;
+        height:120px;
+        justify-content:center;
+        gap: 30px;
+    }
+
+    .LPrice{
+        grid-template-columns: auto auto auto auto;
+    }
+
+}
+
+
+
+@media screen and (max-width:1150px) {
+
+    .LpopularBody-1 , .LpopularBody-2{
+        justify-content:center;
+    }
+
+}
+
+
+@media screen and (max-width:1100px) {
+    .Lseats a{
+        width: 150px;
+        height: 70px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:1000px) { 
+    .LogoScroll{
+        min-height: 80vh;
+        /* top: 10px; */
+        margin-top: 10px;
+        z-index: 1000;
+    }
+
+    .LogoPage{
+        width: 100%;
+        border-radius: 0px;
+        gap: 30px;
+    }
+
+    .LPrice{
+        grid-template-columns:auto auto auto;
+    }
+
+    .Logos-1{
+        justify-content:space-evenly;
+        gap: 15px;
+        width: 180px;
+        height: 140px;
+    }
+
+    .Logos-1 img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .LpopularBody a{
+        width: 150px;
+        height: 80px;
+        font-size: 15px;
+    }
+
+    .Lpopular{
+        height: 250px;
+    }
+
+    .Lbody{
+        grid-template-columns: auto auto auto;
+        justify-content:space-around;
+    }
+
+ }
+
+ @media screen and (max-width:900px) {
+    .LpopularArrow{
+        display: none;
+    }
+
+    .LpopularBody a{
+        width: 120px;
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .Lpopular{
+        height: 170px;
+    }
+
+    .Lseats{
+        grid-template-columns:auto auto auto;
+        row-gap: 50px;
+        justify-content: space-around;
+    }
+
+
+ }
+
+ 
+ @media screen and (max-width:800px) {
+    .LogoPage{
+        gap: 25px;
+    }
+ }
+
+
+ @media screen and (max-width:700px) {
+    .LogoOption{
+        width:95%;
+    }
+
+    .LogoOption button{
+        padding:5px 10px;
+        height: 40px;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .LogoPage{
+        gap: 20px;
+    }
+
+    .LpopularBody a{
+        width: 160px;
+        height: 90px;
+        font-size: 16px;
+    }
+
+    .Lpopular{
+        min-height:90vh;
+    }
+
+    .LpopularBody{
+        grid-template-columns: auto auto;
+    }
+
+    .LPrice{
+        grid-template-columns:auto auto;
+        justify-content: center;
+        gap: 20px;
+    }
+ }
+
+
+ @media screen and (max-width:900px) {
+    .Logos-1{
+        /* justify-content:space-evenly; */
+        gap: 15px;
+        width: 150px;
+        height: 100px;
+    }
+
+   .LogoScrollTag , .Logos , .LogoScroll{
+        min-height:50vh;
+   }
+
+   .Logos{
+    margin: 10px 0px;
+   }
+
+ }
+
+
+ @media screen and (max-width:800px){
+    .Logos-1{
+        /* justify-content:space-evenly; */
+        gap: 15px;
+        width: 120px;
+        height: 100px;
+    }
+
+ }
+
+ @media screen and (max-width:700px){
+    .Logos{
+        grid-template-columns: auto auto;
+    }
+
+    .LogoScrollTag , .Logos , .LogoScroll{
+        min-height:100vh;
+   }
+
+   .LogoArrow{
+    display:none;
+   }
+ }
+
+
+ @media screen and (max-width:600px) {
+    .Lbody{
+        justify-content:space-between;
+    }
+
+    .Lseats{
+        grid-template-columns:auto auto;
+        gap: 30px;
+        justify-content:center;
+    }
+
+ }
+
+
+
+ @media screen and (max-width:550px) {
+    .LogoOption{
+        width:98%;
+        padding: 0px 10px;
+    }
+
+    .LogoOption button{
+        padding:5px 10px;
+        height: 35px;
+        width: 80px;
+        font-size: 10px;
+    }
+
+    .LogoPage{
+        gap:15px;
+    }
+
+    .Lbody{
+        grid-template-columns:auto auto;
+        justify-content: center;
+        column-gap: 50px;
+    }
+
+    .Lbody-1{
+        width: 100px;
+    }
+
+    .Lbody-1 p{
+        font-size: 13px;
+    }
+
+    .Lbody-1 img{
+        width:100%;
+        height:60px;
+    }
+
+ }
+
+
+ @media screen and (max-width:450px) {
+    .LogoOption{
+        width:98%;
+        padding: 0px 10px;
+        gap: 10px;
+    }
+
+    .Lpopular{
+        min-height:65vh;
+    }
+
+    .LpopularBody{
+        align-items: center;
+        gap: 10px;
+    }
+
+    .LogoOption button{
+        padding:0px;
+        height: 30px;
+        width: 70px;
+        font-size:8px;
+    }
+
+    .LpopularBody a{
+        width: 130px;
+        height: 60px;
+        font-size: 13px;
+    }
+
+    .Lseats{
+        gap: 20px;
+    }
+
+ }
+
+ @media screen and (max-width:400px) {
+    .LPrice a{
+        width: 140px;
+        height: 75px;
+    }
+ }
+
+
+/* Logo Page Responsive closes

@@ -1,0 +1,527 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;      
+}
+
+
+
+.contectContainer{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contectHead{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    gap: 20px;
+}
+
+.contectHead i{
+    font-size: 50px;
+}
+
+.contecHeadText{
+    text-align: center;
+    line-height: 35px;
+}
+
+.contecHeadText h1{
+    font-size: 2.5rem;
+}
+
+.contecHeadText p{
+    font-size: 13px;
+}
+
+.contectPera{
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin:1% 0px;
+}
+
+.contactBody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height:50vh;
+    /* background-color: red; */
+    align-items:center;
+    margin-top:20px;
+    justify-content:space-between;
+
+}
+
+.cbOne{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 85%;
+    min-height:60vh;
+    
+}
+
+
+.cbOne-left , .cbOne-right , .cbTwo-right{
+    display:flex;
+    align-items: center;
+    /* height: 300px; */
+    gap: 30px;
+    width:550px;
+    /* background-color: red; */
+    line-height: 25px;
+}
+
+
+
+.cbOne-left img{
+    width: 150px;
+    height:100px; 
+}
+
+
+.cboneLC h1{
+    font-size:25px;    
+}
+
+.cboneLC p , .cboneRC p{
+    color:gray;
+}
+
+.cboneLC h2{
+    font-size: 18px;
+}
+
+.cboneLC h2 span{
+    color: gray;
+}
+
+.cboneLC h3 , .cboneRC h3{
+    font-size:15px;
+}
+
+.cboneLC h3 span , .cboneRC h3 span{
+    text-decoration: underline;
+    color: crimson;
+}
+
+.cbOne-right img{
+    width: 120px;
+    height:100px;
+}
+
+.cboneRC{
+    line-height: 30px;
+}
+
+.cboneRC h1{
+    font-weight: 300;
+}
+
+.cbTwoLC h1{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.cbTwoText{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.cbOne img , .cbTwo img{
+    width: 80px;
+}
+
+
+/* responses Start */
+
+@media screen and (max-width:1150px) {
+    .cbOne{
+        grid-template-columns: auto;
+        gap: 50px;
+        justify-content: center;
+        
+    }
+
+    .cbOne-left , .cbOne-right , .cbTwo-right{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .contectHead{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cbOne img , .cbTwo img{
+        width: 60px;
+        height: 100px;
+    }
+
+    .cboneLC h1 , .cbOneRC h1{
+        font-size: 20px;
+    }
+
+    .cbTwoLC h2 , .cboneLC h2  , .cboneLC h2 span{
+        font-size: 15px;
+    }
+
+    .cboneRC h1 , .cbTwoRC h1{
+        font-size: 20px;
+    }
+
+
+    .cboneLC p , .cboneRC p{
+        font-size: 12px;
+    }
+
+    .cboneRC h3 span , .cboneLC h3 span{
+        font-size: 10px;
+    }
+}   
+
+@media screen and (max-width:400px) {
+    .cbOne img , .cbTwo img{
+        width: 50px;
+        height: 90px;
+    }
+
+    .cboneLC p , .cboneRC p{
+        font-size: 10px;
+    }
+
+    .cboneLC h1 , .cboneRC{
+        font-size: 18px;
+    }
+
+    .cboneLC .h2{
+        font-size: 13px;
+    }
+
+    .cboneLC h2 span{
+        font-size: 10px;
+    }
+
+    .cboneRC{
+        line-height: 20px;
+    }
+
+}
+
+
+/* NavPar Style Start */
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding: 5px 2% 5px 2%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    justify-content: space-between;
+}
+
+nav .navLogo{
+    width: 140px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+.navLeft{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.navButton{
+    display: flex;
+    gap: 30px;
+    color: black;
+}
+
+.navButton a , .navRight a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+.navRight{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.navRight button{
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    background-color:crimson;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+    color: #fff;
+}
+
+
+.resIcon{
+    display: none !important;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.resIcon .xmarNav{
+    display: none;
+}
+
+
+.responsiveNav{
+    width: 40%;
+    height:400px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 30px 10px 20px;
+    position: absolute;
+    top:60px;
+    left:-100%;
+    transition: all 0.30s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.resCon{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.resCon a{
+    text-decoration: none;
+    color: black;
+}
+
+.resNumberTag{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.resNumberTag button{
+    width: 80px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.resNumberTag img{
+    width: 100px;
+    height: 40px;
+}
+
+
+.responsiveNav{
+    display:none;
+}
+
+/* nave response start */
+
+@media screen and (max-width:900px) {
+    .navButton , .navRight{
+        display: none;
+    }
+
+    .resIcon{
+        display: flex !important;
+    }
+
+    nav{
+        width: 100%;
+        border-radius:0px;
+        background-color: #fff;
+        margin-top:0;
+        padding: 5px 25px 5px 20px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        left: -100%;
+    }
+    
+}
+
+
+/* nav response clouses */
+
+/* NavPar Style Clouses */
+
+
+
+/* footer is start */
+
+footer{
+    width: 100%;
+    background-color: #333333;
+    min-height: 400px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 20px 5%;
+    margin-top: 40px;
+}
+
+.footerhead{
+    display: flex;
+    gap: 20px;
+    color: #cccccc;
+}
+
+.footerLine{
+    height: 2px;
+    margin: 20px 0px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.FooterContent{
+    display: flex;
+    justify-content: space-between;
+    color: #cccccc;
+}
+
+.footerText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerTextHead{
+    color: #ffffff;
+    margin: 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.footerSix{
+    margin-top: 8%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+}
+
+.footerLogos{
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+.footerIcon{
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+/* footer is clouses */
+
+/* footer Responsive Start */
+
+@media screen and (max-width:1100px) {
+    footer{
+        padding: 20px 2%;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .footerSix{
+        margin-top:1%;
+    }
+
+    footer{
+        padding: 20px 6%;
+    }
+
+    .FooterContent{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 8%;
+    }
+}
+
+@media screen and (max-width:850px){
+   
+    .footerhead{
+        justify-content: center;
+    }
+
+    .footerhead a{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .FooterContent{
+        grid-template-columns: auto auto;
+        justify-content: center;
+
+    }
+
+    .footerhead a{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footerhead{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .FooterContent{
+        grid-template-columns: auto;
+        row-gap: 5%;
+    }
+}
+
+/* footer Responsive clouses */
+
+

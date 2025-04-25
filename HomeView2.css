@@ -1,0 +1,993 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+/* NavPar Style Start */
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    padding: 5px 2% 5px 2%;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    justify-content: space-between;
+}
+
+nav .navLogo{
+    width: 140px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+.navLeft{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.navButton{
+    display: flex;
+    gap: 30px;
+    color: black;
+}
+
+.navButton a , .navRight a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+.navRight{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.navRight button{
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    background-color:crimson;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+    color: #fff;
+}
+
+
+.resIcon{
+    display: none !important;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.resIcon .xmarNav{
+    display: none;
+}
+
+
+.responsiveNav{
+    width: 40%;
+    height:400px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 30px 10px 20px;
+    position: absolute;
+    top:60px;
+    left:-100%;
+    transition: all 0.30s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.resCon{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.resCon a{
+    text-decoration: none;
+    color: black;
+}
+
+.resNumberTag{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.resNumberTag button{
+    width: 80px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.resNumberTag img{
+    width: 100px;
+    height: 40px;
+}
+
+
+.responsiveNav{
+    display:none;
+}
+
+/* nave response start */
+
+@media screen and (max-width:900px) {
+    .navButton , .navRight{
+        display: none;
+    }
+
+    .resIcon{
+        display: flex !important;
+    }
+
+    nav{
+        width: 100%;
+        border-radius:0px;
+        background-color: #fff;
+        margin-top:0;
+        padding: 5px 25px 5px 20px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        left: -100%;
+    }
+    
+}
+
+
+/* nav response clouses */
+
+/* NavPar Style Clouses */
+
+
+
+.viewContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* background-color: red; */
+    min-height: 100vh;
+}
+
+.viewImg{
+    width: 100%;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.viewImg img{
+    width: 34%;
+    height: 100%;
+}
+
+.ViewContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* height: 150px; */
+    align-items:start;
+    padding: 0px 2%;
+    margin-top:5%;
+
+}
+
+.leftViewContent{
+    display: grid;
+    gap: 30px;
+    width: 40%;
+    min-height: 20%;
+    /* background-color: red; */
+    /* background-color: yellow; */
+}
+
+.leftViewContent h1{
+    font-size: 25px;
+}
+
+.Rate{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.KM{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightViewBox{
+    background: linear-gradient(to left, #0038A7, #141652);
+    height: 180px;
+    align-items: flex-start;
+    padding: 10px 16px;
+    display: grid;
+    gap: 8px;
+    width:400px;
+    border-radius: 10px;
+}
+
+
+.rvBoxHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+}
+
+.rvBoxHeadImg{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    padding-top: 5px;
+}
+
+.rvBoxHeadImg img{
+    width:90%;
+    height:90%;
+}
+
+.rvBoxBody{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height:90px;
+}
+
+.rvB-1{
+    border-radius:10px;
+    flex-direction: column;
+    width:30%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.rvB-1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.rvB-1 p{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.rightViewContent{
+    /* width: 40%; */
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.rightViewContent button{
+    width: 300px;
+    height: 50px;
+    background-color: navy;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    border-radius: 25px;
+
+}
+.LVCD{
+    display: grid;
+    gap: 10px;
+    
+}
+
+
+
+.LVCD-1 , .LVCD-2 , .LVCDbottom{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LVCDbottom-1 , .LVCDbottom-2 , .LVCDbottom-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.LVCD-2 h1{
+    font-size: 20px;
+}
+
+
+/* ViewBody Start */
+
+    .viewBody{
+        display: flex;
+        justify-content:start;
+        margin-top: -30px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .leftViewBody{
+        width: 60%;
+        /* background-color: red; */
+    }
+
+    .carReview{
+        margin-top: 20px;
+        width: 100%;
+        display:flex;
+        
+        gap: 20px;
+    }
+
+
+    .type-1 , .type-2{
+        display:grid;
+        gap: 30px;
+        width: 50%;
+        /* background-color: yellow; */
+    }
+
+    .r1Main , .r2main{
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+    }
+
+    .r1Main p , .r1Main h3  , .r2main p , .r2main h3{
+        width: 50%;
+        font-size: 16px;
+
+    }
+
+    .r1Main p , .r2main p{
+        color:#333333;
+    }
+
+    /* feature Tag Start */
+
+    .cutomerFeatureH1{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .cutomerFeature{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cf{
+        width: 100px;
+        height: 120px;
+    }
+
+    .cf img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Feature Tag Closes */
+
+
+    /* Car details is Start */
+
+    .carDetails{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px 10px 30px;
+    }
+
+    .carDetails h1{
+        font-size: 25px;
+    }
+
+    .carPara{
+        font-size:18px;
+        font-weight: 300;
+    }
+
+    .cardetails-Service{
+        padding: 20px 0px;
+    }
+
+    .cardetails-Service ul{
+        padding-left: 20px;
+    } 
+
+    .carLine{
+        padding: 10px 0px;
+    }
+
+    .emtype ul{
+        padding-left: 20px;
+    }
+
+    .showNumber{
+        display: grid;
+        gap:5px;
+        padding: 15px 0px;
+    }
+
+    .showNumber-1 , .showNumber-2{
+        display: flex;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .showNumber-1 p , .showNumber-2 p{
+        font-weight: 200;
+        color: #333333;
+    }
+
+    /* Car details clouses */
+/* ViewBody Clouses */
+
+
+/* view Bottom Satrt */
+    
+    .viewBottom{
+        width: 100%;
+    }
+
+    .bottomBody{
+        width: 100%;
+        /* display: grid; */
+        display: flex;
+        padding: 10px;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .rightTag{
+        width:250px;
+        height: 280px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+        gap: 30px;
+        border: 1px solid lightgray;
+        position: relative;
+        padding-bottom:20px;
+    }
+
+    .rightImgTag{
+        width:400%;
+        height: 60%;
+        display: flex;
+        overflow: hidden;
+        position:absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .rightImgTag img{
+        width:25%;
+        height: 100%;
+    }
+
+
+    .righTagContent{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .rightC , .LeftC{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightC p{
+        color:#1C1D26;
+        font-size:12px;
+        font-weight: 400px;
+    }
+
+    .leftC p{
+        font-size: 12px;
+        font-weight: 400;
+        color: #1C1D26;
+    }
+
+    .LeftC .leftCHead-1{
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+/* ViewBottom Clouses */
+
+
+/* Responsive start */
+
+
+@media screen and (max-width:1250px) {
+    .bottomBody{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    
+    .leftViewBody{
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .viewBottom{
+        width: 100%;
+        overflow: scroll;
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+    
+    .ViewContent{
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+        gap: 30px;
+        min-height: 100vh;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .leftViewContent{
+        width: 70%;
+    }
+
+    .rightViewContent{
+        width: 60%;
+    }
+
+    .rightViewBox{
+        width: 90%;
+    }
+
+    .viewImg{
+        height: 280px;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    .carReview{
+        flex-direction: column;
+    }
+
+   
+    .carDetails h1{
+        font-size: 20px;
+    }
+
+    .carPara{
+        font-size:15px;
+    }    
+
+    .carDetails{
+        font-size: 15px;
+    }
+
+    .cutomerFeature{
+        gap: 10px;
+    }
+
+    .cf{
+        width: 90px;
+        height: 110px;
+    }
+
+    .cf img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottomBody{
+        grid-template-columns:auto auto;
+    }
+
+    .viewImg{
+        height: 250px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    .cf{
+        width: 70px;
+        height: 90px;
+    }
+
+    .viewBottom h1{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+    .rightViewBox{
+        width:400px;
+    }
+
+    .leftViewContent{
+        width: 90%;
+    }
+
+    .viewImg{
+        height: 200px;
+    }
+
+    .ViewContent{
+        min-height:95vh;
+    }
+
+    .type-1, .type-2 {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width:550px) {
+    .leftViewContent h3{
+        font-size: 20px;
+    }
+    
+    .leftViewContent p{
+        font-size:15px;
+    }
+
+    .LVCD-1 , .LVCD-2 , .LVCDbottom{
+        font-size: 12px;
+    }
+
+    .LVCD-2 h1{
+        font-size: 18px;
+    }
+
+  
+    .LVCD-1 h1{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .leftViewContent{
+        gap: 15px;
+    }
+    
+    .bottomBody{
+        grid-template-columns:auto;
+    }
+
+    .viewImg{
+        height:180px;
+    }
+
+    .ViewContent{
+        min-height:85vh;
+        margin-bottom: 20px;
+    }
+
+    .type-1, .type-2 {
+        width:100%;
+    }
+
+    .r1Main p , .r1Main h3  , .r2main p , .r2main h3{
+        width: 50%;
+        font-size: 13px;
+
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .rightViewBox{
+        width: 320px;
+        height: 160px;
+    }
+
+    .rightViewContent{
+        min-height: 200px;
+    }
+
+    .rvBoxHead h4{
+        font-size: 13px;
+    }
+
+    .rvBoxHeadImg{
+        width: 100px;
+        height: 40px;
+        border: unset;
+        border-radius: 5px;
+    }
+
+    .rvBoxHeadImg img{
+        width: 95%;
+        height: 95%;
+        padding-top: 5px;
+    }
+
+    .rvBoxBody{
+        height: 75px;
+    }
+
+    .rvB-1{
+        width:31%;
+        height: 100%;
+    }
+
+    .rvB-1 p{
+        gap:2px;
+        font-size: 10px;
+    }
+    
+
+    .rightViewContent button{
+        width: 200px;
+        height: 45px;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 25px;
+    
+    }
+    
+    .leftViewContent{
+        height: 170px;
+    }
+
+    .cutomerFeatureH1{
+        margin: 10px 0px;
+    }
+
+    .cutomerFeature{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .viewImg{
+        height: 160px;
+    }
+
+    .ViewContent{
+        min-height:75vh;
+        
+    }
+
+}
+
+
+@media screen and (max-width:400px) {
+    .leftViewContent h3{
+        font-size:17px;
+    }
+    
+    .leftViewContent p{
+        font-size:12px;
+    }
+
+    .LVCD-1 , .LVCD-2 , .LVCDbottom{
+        font-size: 10px;
+    }
+
+    .LVCD-2 h1{
+        font-size: 16px;
+    }
+    
+
+    .leftViewContent{
+        gap: 10px;
+    }
+
+
+}
+/* Responsive closes*/
+
+
+/* footer page Start */
+    /* footer is start */
+    footer{
+        width: 100%;
+        background-color:#141652;
+        background-color: #333333;
+        min-height: 400px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 20px 5%;
+        margin-top: 80px;
+    }
+
+    .footerhead{
+        display: flex;
+        gap: 20px;
+        color: #cccccc;
+    }
+
+    .footerLine{
+        height: 2px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .FooterContent{
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+    }
+
+    .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerTextHead{
+        color: #ffffff;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    .footerSix{
+        margin-top: 8%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+    }
+
+    .footerLogos{
+        display: flex;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+
+    .footerIcon{
+        font-size: 25px;
+        display: flex;
+        gap: 10px;
+    }
+
+/* footer is clouses */
+
+/* Resposive Start */
+
+/* footer Responsive Start */
+
+    @media screen and (max-width:1100px) {
+        footer{
+            padding: 20px 2%;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .footerSix{
+            margin-top:1%;
+        }
+
+        footer{
+            padding: 20px 6%;
+        }
+
+        .FooterContent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 8%;
+        }
+    }
+
+    @media screen and (max-width:850px){
+       
+        .footerhead{
+            justify-content: center;
+        }
+
+        .footerhead a{
+            font-size: 12px;
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .FooterContent{
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+        }
+
+        .footerhead a{
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .footerhead{
+            display: none;
+        }
+    }
+
+
+    @media screen and (max-width:400px) {
+        .FooterContent{
+            grid-template-columns: auto;
+            row-gap: 5%;
+        }
+    }
+/* footer Responsive clouses */
+/* footer page clouses */
+/* Footer Page is Clouses */
+
+ 

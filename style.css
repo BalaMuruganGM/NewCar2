@@ -1,0 +1,1874 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+.container{
+    /* background: linear-gradient(to right, #141652, #305297); */
+    width: 100%;
+    background-color: #141652;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subContainer{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 90%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: #fff;
+    margin-top: 4%;
+    padding: 5px 30px 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: relative;
+}
+
+nav .navLogo{
+    width: 140px;
+    height: 50px;
+    padding-top: 5px;
+}
+
+
+.navLeft{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+}
+
+.navButton{
+    display: flex;
+    gap: 30px;
+    color: black;
+}
+
+.navButton a , .navRight a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+.navRight{
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.navRight button{
+    padding: 10px;
+    border: unset;
+    border-radius: 5px;
+    background-color:crimson;
+    font-size: 15px;
+    font-weight: 700;
+    width: 80px;
+    color: #fff;
+}
+
+.resIcon{
+    display: none !important;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.resIcon .xmarNav{
+    display: none;
+}
+
+
+.responsiveNav{
+    width: 40%;
+    height:400px;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 30px 10px 20px;
+    position: absolute;
+    top:60px;
+    left:-100%;
+    transition: all 0.30s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.resCon{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.resCon a{
+    text-decoration: none;
+    color: black;
+}
+
+.resNumberTag{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.resNumberTag button{
+    width: 80px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.resNumberTag img{
+    width: 100px;
+    height: 40px;
+}
+
+.responsiveNav{
+    display:none;
+}
+
+/* nave response start */
+
+@media screen and (max-width:900px) {
+    .navButton , .navRight{
+        display: none;
+    }
+
+    .resIcon{
+        display: flex !important;
+    }
+
+    nav{
+        width: 100%;
+        border-radius:0px;
+        background-color: #fff;
+        margin-top:0;
+        padding: 5px 25px 5px 20px;
+    }
+
+    .responsiveNav{
+        display:flex;
+        left: -100%;
+    }
+    
+}
+
+
+/* nav response clouses */
+.home{
+    /* background-color: red; */
+    width: 90%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeHead{
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+    align-items: center;
+    font-variant: small-caps;
+    color: white;
+    font-weight: 800;
+    margin:5% 0px 2% 0px;
+    
+}
+
+.homeHead h1 , .homeHead p{
+    letter-spacing: -2px;
+}
+
+.homeHead h1{
+    word-spacing: -10px;
+    font-size: 68px;
+
+}
+
+.homeHead p{
+    font-weight:lighter;
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.homeBody{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    /* height: 400px; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.homeBody img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Logo page Start */
+
+    .LogoPage{
+        width: 90%;
+        /* height: 110vh; */
+        background-color: white;
+        border-radius: 20px;
+        margin: 4% 0px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding:40px 0px;
+        gap: 40px;
+        position: relative;
+    }
+
+    .LogoPageHead{
+        /* font-size:20px; */
+        text-align: center;
+        color: #141652;
+        line-height: 45px;
+    }
+
+    .LogoOption{
+        display: flex;
+        width:80%;
+        justify-content: space-between;
+    }
+
+    .LogoOption button{
+        padding:10px 20px;
+        border: unset;
+        /* border: 2px solid blue; */
+        border-radius: 20px;
+        border: 1px solid gray;
+    }
+
+    .LogoOption button:hover{
+        border: 1px solid blue;
+        color: blue;
+    }
+
+
+    .LogoScrollTag{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .LogoScroll{
+        position: absolute;
+        width:400%;
+        min-height: 70vh;
+        overflow: hidden;
+        display: flex;
+        left: 0px;
+    }
+
+    .Logos{
+        display: grid;
+        min-height: 70vh;
+        padding-top: 10px;
+        grid-template-columns: auto auto auto auto;
+        width:25%;
+        gap: 30px;
+        justify-content: center;
+        border: unset;
+        margin-top: 20px;
+    }
+
+    .Logos-1{
+        width: 250px;
+        height:160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius:10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    }
+
+    .Logos-1 img{
+        width:70px;
+        height:60px;
+    }
+
+    .LogosTag-1{
+        display:grid;
+    }
+
+    .LogoArrow{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        width:100%;
+        padding: 0px 30px;
+        justify-content: space-between;
+    }
+
+    .LogoArrow i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .pulliTag{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .pulliTag p{
+        height: 10px;
+        width: 10px;
+        border: 1px solid blue;
+        border-radius: 50%;
+    }
+
+    .pulli-1{
+        background-color: blue;
+    }
+
+    /* .LogoScrollTag , .pulliTag{
+        display: none;
+    } */
+
+
+    /* Lpopular Tag Start */
+
+    .Lpopular{   
+        width:80%;
+        height: 300px;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+
+    /* .LpopularBody-2 , .LpopularBody-3 , .LpopularBody-4{
+        display: none;
+    } */
+
+    .LpopularScroll{
+        width: 400%;
+        height: 100%;
+        display: flex;
+        position:absolute;
+        left: 0px;
+    }
+
+    .LpopularBody-1 , .LpopularBody-2{
+        width:25%;
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 38px 20px;
+        justify-content:space-between;
+    }
+
+    
+
+    .LpopularBody a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        border: 2px solid transparent;
+        transition: all 0.30s;
+        background-color: red;
+
+    }
+
+    .LpopularBody a:hover{
+        border: 2px solid #033f63;
+        color: #033f63;
+        background-color: transparent;
+    }
+
+
+    .LpopularArrow{
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .LpopularArrow i{
+        cursor: pointer;
+        font-size: 25px;
+
+    }
+
+    /* Lpopular Tag closes */
+
+
+    /* .Logos , .LogoArrow , .pulliTag , .LogoScrollTag{
+        display: none;
+    } */
+
+    .LPrice{
+        width: 100%;
+        justify-content:space-around;
+        padding: 20px 6%;
+        display: grid;
+        gap: 50px;
+
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .LPrice a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+
+    .LPrice{
+        display: none;
+    }
+
+    .Lbody{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        min-height: 50vh;
+        gap: 20px;
+        justify-content: space-between;
+        width:75%;
+        /* padding: 0px 10%; */
+    }
+
+    .Lbody-1{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: baseline;
+        justify-content: center;
+        width: 120px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .Lbody-1 p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Lbody-1 img{
+        width:100%;
+        height:70px;
+    }
+
+    .Lbody{
+        display: none;
+    }
+
+    .Lseats{
+        width: 85%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    .Lseats a{
+        width: 170px;
+        height: 90px;
+        text-decoration: none;
+        color: black;
+        border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        background: #FFF;
+        box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 10px;
+        /* border: 1px solid lightgray; */
+    }
+
+    .Lseats{
+        display: none;
+    }
+
+
+
+/* Logo Page clouses */
+
+/* Expole Page is Start */
+
+
+/* Expoler Page is clouse */
+
+/* Listing car Start */
+
+    .Listing{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        padding:5% 2%;
+    }
+
+
+    .ListingHead{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ListingBut{
+        display: flex;
+        gap: 20px;
+    }
+
+    .ListingBut-1 , .ListingBut-2{
+        width: 120px;
+        padding: 15px 10px;
+        border: unset;
+        border-radius: 5px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .ListingBut-2{
+        background-color: transparent;
+        color: black;
+    }
+    
+
+    .ListingCar{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        padding:4% 1%;
+        gap: 30px;
+    }
+
+    .ListingCarBox{
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        gap: 20px;
+    }
+
+    .LeftListingCar{
+        width: 40%;
+        height: 100%;
+        background-color: white;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+
+    }
+
+    .scrollImg{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        left:0px;
+        display: flex;
+    }
+
+    .scrollImg img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .rightListingCar{
+        width: 50%;
+    }
+
+    .CarArrows{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content:space-between;
+        color: white;
+        padding: 0px 2%;
+        top: 40%;
+        font-size: 20px;
+    }
+
+    .CarArrows i{
+        cursor: pointer;
+    }
+
+    .rightListingCar{
+        padding: 2%;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+
+    .rightHead{
+        display: flex;
+        justify-content: space-between;
+        color: gray;
+    }
+
+    .rightHead h1{
+        font-size: 22px;
+        color: blue;
+    }
+
+    .rightBody h1{
+        font-size: 22px;
+    }
+
+    .rightBody{
+        transition: all 1s;
+    }
+
+
+    .rightListingCar:hover .rightBody{
+        color: blue;
+    }
+
+ 
+
+    .rightBottom{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rightSpeed , .rightGasoline , .rightCC{
+        color: gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .formInformation{
+        display: none;
+    }
+
+
+/* Listing Car clouses */
+
+/* price Page is Start */
+
+    .pricePage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        min-height: 80vh;
+        background-color:#fff;
+        padding: 1%;
+    }
+
+    .priceHead{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .priceHead h1{
+        font-size: 35px;
+    }
+
+    .priceHead a{
+        width: 120px;
+        height: 50px;
+        /* background-color: blue; */
+        color: #fff;
+        background-color: blue;
+        border: unset;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .priceBody{
+        display: flex;
+        gap: 20px;
+        width: 100%;
+
+    }
+
+    .leftPrice{
+        width: 20%;
+        width: 250px;
+        padding: 1% 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .leftpriceHead{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .leftpriceBody{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+
+
+/* featur car star */
+
+    .rightPrice{
+        display:grid;
+        grid-template-columns:auto auto auto;
+        gap: 20px;
+        width: 80%;
+        justify-content:space-between;
+        height:88vh;
+        overflow-y: scroll;
+    }
+
+    .rightPrice::-webkit-scrollbar{
+        width: 0px;
+    }
+
+
+    /* .rightPriceBox{
+        width:320px;
+        height:270px;
+        background-color:white;
+        padding-bottom:10px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid gray;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+    .rightPriceImg{
+        width:100%;
+        height:190px;
+        display: flex;
+        position: relative;
+    }
+
+    .rightPriceImg img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .rightPriceImgOne-1{
+        z-index: 10;
+    } */
+
+
+    .rightTag{
+        width:320px;
+        height: 310px;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+        gap: 30px;
+        border: 1px solid lightgray;
+        position: relative;
+        padding-bottom:20px;
+    }
+
+    .rightImgTag{
+        width:400%;
+        height: 60%;
+        display: flex;
+        overflow: hidden;
+        position:absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .rightImgTag img{
+        width:25%;
+        height: 100%;
+    }
+
+
+    .righTagContent{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .rightC , .LeftC{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rightC p{
+        color:#1C1D26;
+        font-size:14px;
+        font-weight: 400px;
+    }
+
+    .leftC p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #1C1D26;
+    }
+
+    .LeftC .leftCHead-1{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+
+    .formInformation{
+        display: none;
+    }
+    
+
+/*  rightSide clouses*/
+
+
+
+
+    .featureHeadOne-tag{
+        margin-top: 15px;
+    }
+
+    .featureHeadOne-tag , .featureHeadtwo-tag{
+        display: flex;
+        justify-content: space-between;
+        padding:2px 10px;
+        font-size: 18px;
+    }
+
+    .featureHeadtwo-tag{
+        justify-content: start;
+        gap: 15px;
+    }
+
+/* Featur car clouse */
+
+
+/* price page clouse */
+
+/* section page is start */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 60px;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    padding: 30px 0px 10px;
+    transition:0.5s ease;
+    border-top: 5px solid #1416520d;}
+
+.sectionHead{
+    text-align: center;
+    /* color: #fff; */
+    font-size: 35px;
+    /* line-height: 60px; */
+    font-weight: 800;
+}
+
+
+.sectionHead h1{
+    color: #141652;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sectionBody{
+        width:95%;
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+    }
+
+    .set1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        /* background-color:#141652; */
+        padding-bottom: 20px;
+        border: 1px solid lightgray;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    }
+
+
+    .set1Content{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+        /* background-color: red; */
+    }
+
+    .set1 h3{
+        color:#141652;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 22px;
+    }
+
+    .set1 p{
+        color: #141652;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .set1 img{
+        width:100%;
+        height: 210px;
+
+    }
+
+
+    .setionBut{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .setionBut a{
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:20px;
+        border: 2px solid white;
+    }
+
+
+    .set1:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+    }
+
+/* section page is clouses */
+
+/* footer page Start */
+
+    /* footer is start */
+
+    footer{
+        width: 100%;
+        background-color:#141652;
+        background-color: #333333;
+        min-height: 400px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 20px 5%;
+        /* margin-top: 50px; */
+    }
+
+    .footerhead{
+        display: flex;
+        gap: 20px;
+        color: #cccccc;
+    }
+
+    .footerLine{
+        height: 2px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .FooterContent{
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+    }
+
+    .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerTextHead{
+        color: #ffffff;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    .footerSix{
+        margin-top: 8%;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:center;
+    }
+
+    .footerLogos{
+        display: flex;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+
+    .footerIcon{
+        font-size: 25px;
+        display: flex;
+        gap: 10px;
+    }
+
+/* footer is clouses */
+
+/* Resposive Start */
+
+/* footer Responsive Start */
+
+    @media screen and (max-width:1100px) {
+        footer{
+            padding: 20px 2%;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) {
+        .footerSix{
+            margin-top:1%;
+        }
+
+        footer{
+            padding: 20px 6%;
+        }
+
+        .FooterContent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 8%;
+        }
+    }
+
+    @media screen and (max-width:850px){
+       
+        .footerhead{
+            justify-content: center;
+        }
+
+        .footerhead a{
+            font-size: 12px;
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .FooterContent{
+            grid-template-columns: auto auto;
+            justify-content: center;
+        }
+
+        .footerhead a{
+            font-size: 10px;
+        }
+
+        .LogoPageHead{
+            line-height: 25px;
+            font-size:13px;
+        }        
+    }
+
+    @media screen and (max-width:550px) {
+            .LogoPageHead{
+                font-size: 11px;
+            }
+    }
+
+    @media screen and (max-width:600px) {
+        .footerhead{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        .LogoPageHead{
+            font-size: 10px;
+            line-height:16px;
+        }
+
+
+    }
+
+    @media screen and (max-width:400px) {
+        .FooterContent{
+            grid-template-columns: auto;
+            row-gap: 5%;
+        }
+
+        .LogoPageHead{
+            font-size: 8px;
+            line-height:14px;
+        }
+
+    }
+
+/* footer Responsive clouses */
+
+
+/* footer page clouses */
+
+
+
+/* Main Responsive Start */
+
+
+    @media screen and (max-width:1300px) {
+        .rightPriceBox{
+            width:300px;
+            height:250px;
+            padding-bottom: 15px;
+        }   
+
+        .rightPrice{
+            justify-content: center;
+        }
+
+        .featureHeadOne-tag , .featureHeadtwo-tag{
+            font-size: 15px;
+        }
+
+        section{
+            gap:30px;
+        }
+
+        .sectionBody{
+            justify-content: center;
+            gap: 30px;
+            grid-template-columns: 330px 330px 330px;
+        }
+
+    }
+
+
+    @media screen and (max-width:1240px) {
+
+        .rightPrice{
+            width: 100%;
+        }
+        .leftPrice{
+            display: none;
+        }
+        
+        .priceHead{
+            width: 90%;
+        }
+
+    }
+
+    @media screen and (max-width:1000px) {
+        .rightPrice{
+            display: grid;
+            grid-template-columns: auto auto;
+            overflow: hidden;
+        }
+
+
+        .pricePage{
+            gap: 15px;
+        }
+
+        .priceHead h1{
+            font-size: 30px;
+        }
+
+        
+        .priceHead a{
+            width: 100px;
+            height: 40px;
+            /* background-color: blue; */
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .priceHead{
+            margin-bottom: 5px;
+        }
+    
+
+    }
+
+
+    @media screen and (max-width:1100px) {
+        .ListingCar{
+            grid-template-columns:600px;
+            justify-content: center;
+        }
+
+
+        section{
+            gap: 40px;
+        }
+
+        .sectionBody{
+            grid-template-columns:400px 400px;
+        }
+
+    }
+
+    @media screen and (max-width:900px) {
+        .home{
+            min-height: 30vh;
+        }
+
+        .sectionBody{
+            grid-template-columns:330px 330px;
+        }
+
+        section{
+            gap: 25px;
+        }
+
+
+        .ListingHead{
+            padding: 0px 15px;
+        }
+
+        .ListingHead h1{
+            font-size: 25px;
+        }
+
+        .ListingBut-1 , .ListingBut-2{
+            width: 100px;
+            padding: 12px 8px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+
+  
+    }
+
+    @media screen and (max-width:700px) {
+        .homeHead h1{
+            font-size: 60px;
+        }
+
+        .homeHead p{
+            font-size: 40px;
+        }
+
+        .ListingCar{
+            grid-template-columns:calc(90%);
+            /* justify-content: center; */
+        }
+
+        .sectionBody{
+            grid-template-columns:400px;
+        }
+
+        .ListingHead{
+            padding: 0px 10px;
+        }
+
+        .ListingHead h1{
+            font-size: 23px;
+        }
+
+        .ListingBut{
+            gap: 5px;
+        }
+
+        .ListingBut-1 , .ListingBut-2{
+            width:90px;
+            padding: 10px 7px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 13px;
+        }
+    }
+
+
+    @media screen and (max-width:650px) {
+        .rightPrice{
+            grid-template-columns: auto;
+        }   
+    }
+
+
+    @media screen and (max-width:600px){
+        .home{
+            width: 100%;
+        }
+        .homeBody{
+            width: 90%;
+        }
+        .homeHead{
+            line-height: 45px;
+        }
+
+        .ListingCar{
+            grid-template-columns:calc(95%);
+        }
+
+        .priceHead h1{
+            font-size: 25px;
+        }
+
+        
+        .priceHead a{
+            width:90px;
+            height:35px;
+            /* background-color: blue; */
+            font-weight: 700;
+            font-size: 12px;
+        }
+    }
+
+
+    @media screen and (max-width:550px) {
+
+        .rightHead h1{
+            font-size:18px;
+        }
+    
+        .rightBody h1{
+            font-size: 18px;
+        }
+
+        .ListingCarBox{
+            height: 160px;
+        }
+
+        .pricePage{
+            gap:5px;
+        }   
+
+        .sectionHead h1{
+            font-size: 28px;
+        }
+
+        .sectionBody{
+            grid-template-columns:350px;
+        }
+
+    }
+
+    @media screen and (max-width:500px){
+        .homeHead h1{
+            font-size: 50px;
+        }
+
+        .homeHead p{
+            font-size: 30px;
+        }
+
+        .homeHead{
+            line-height: 35px;
+        }
+
+        .ListingCar{
+            grid-template-columns:calc(98%);
+        }
+
+        .rightHead h1{
+            font-size:16px;
+        }
+    
+        .rightBody h1{
+            font-size: 16px;
+        }
+
+        .rightHead p , .rightSpeed p , .rightBottom{
+            font-size: 12px;
+        }
+
+        .priceHead h1{
+            font-size: 20px;
+        }
+
+        
+        .priceHead a{
+            width:80px;
+            height:30px;
+            /* background-color: blue; */
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        .ListingHead h1{
+            font-size: 20px;
+        }
+
+        .ListingBut-1 , .ListingBut-2{
+            width:70px;
+            padding: 8px 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 10px;
+        }
+
+        .ListingHead{
+            padding: 0px 3px;
+        }
+
+    }
+
+    
+
+    @media screen and (max-width:450px) {
+        .LeftListingCar{
+            width: 50%;
+        }
+
+        .rightBottom{
+            font-size: 10px;
+        }
+
+        .sectionBody{
+            grid-template-columns:330px;
+        }
+
+        .sectionHead h1{
+            font-size: 25px;
+            
+        }
+
+    }
+
+    @media screen and (max-width:400px){
+        .homeHead h1{
+            font-size:45px;
+        }
+
+        .homeHead p{
+            font-size: 25px;
+        }
+
+        .homeHead{
+            line-height: 30px;
+        }
+
+        .ListingCarBox{
+            height: 140px;
+        }
+
+
+        .ListingHead h1{
+            font-size: 18px;
+        }
+
+        .ListingBut-1 , .ListingBut-2{
+            width:60px;
+            padding: 6px 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 9px;
+        }
+    }
+
+/* Main Responsive clouses */
+
+
+/* Logo Page Responsive Start */
+
+    @media screen and (max-width:1300px) {
+        .Lseats{
+            width: 90%;
+            gap: 10px;
+        }
+
+        .rightTag{
+            width: 290px;
+        }
+
+
+
+    }
+
+
+    @media screen and (max-width:1250px) {
+        .Logos-1{
+            width: 200px;
+            height:120px;
+            justify-content:center;
+            gap: 30px;
+        }
+
+        .LPrice{
+            grid-template-columns: auto auto auto auto;
+        }
+
+    }
+
+
+
+    @media screen and (max-width:1150px) {
+
+        .LpopularBody-1 , .LpopularBody-2{
+            justify-content:center;
+        }
+
+    }
+
+
+    @media screen and (max-width:1100px) {
+        .Lseats a{
+            width: 150px;
+            height: 70px;
+            font-size: 18px;
+        }
+    }
+
+
+    @media screen and (max-width:1000px) { 
+        .LogoScroll{
+            min-height: 80vh;
+            /* top: 10px; */
+            margin-top: 10px;
+            z-index: 1000;
+        }
+
+        .LogoPage{
+            width: 100%;
+            border-radius: 0px;
+            gap: 30px;
+        }
+
+        .LPrice{
+            grid-template-columns:auto auto auto;
+        }
+
+        .Logos-1{
+            justify-content:space-evenly;
+            gap: 15px;
+            width: 180px;
+            height: 140px;
+        }
+
+        .Logos-1 img{
+            width: 40%;
+            height: 40%;
+        }
+
+        .LpopularBody a{
+            width: 150px;
+            height: 80px;
+            font-size: 15px;
+        }
+
+        .Lpopular{
+            height: 250px;
+        }
+
+        .Lbody{
+            grid-template-columns: auto auto auto;
+            justify-content:space-around;
+        }
+
+     }
+
+     @media screen and (max-width:900px) {
+        .LpopularArrow{
+            display: none;
+        }
+
+        .LpopularBody a{
+            width: 120px;
+            height: 60px;
+            font-size: 12px;
+        }
+
+        .Lpopular{
+            height: 170px;
+        }
+
+        .Lseats{
+            grid-template-columns:auto auto auto;
+            row-gap: 50px;
+            justify-content: space-around;
+        }
+
+
+     }
+
+     
+     @media screen and (max-width:800px) {
+        .LogoPage{
+            gap: 25px;
+        }
+     }
+
+
+     @media screen and (max-width:700px) {
+        .LogoOption{
+            width:95%;
+        }
+    
+        .LogoOption button{
+            padding:5px 10px;
+            height: 40px;
+            width: 100px;
+            font-size: 12px;
+        }
+
+        .LogoPage{
+            gap: 20px;
+        }
+
+        .LpopularBody a{
+            width: 160px;
+            height: 90px;
+            font-size: 16px;
+        }
+
+        .Lpopular{
+            min-height:90vh;
+        }
+
+        .LpopularBody{
+            grid-template-columns: auto auto;
+        }
+
+        .LPrice{
+            grid-template-columns:auto auto;
+            justify-content: center;
+            gap: 20px;
+        }
+     }
+
+
+     @media screen and (max-width:900px) {
+        .Logos-1{
+            /* justify-content:space-evenly; */
+            gap: 15px;
+            width: 150px;
+            height: 100px;
+        }
+
+       .LogoScrollTag , .Logos , .LogoScroll{
+            min-height:50vh;
+       }
+
+       .Logos{
+        margin: 10px 0px;
+       }
+
+     }
+
+
+     @media screen and (max-width:800px){
+        .Logos-1{
+            /* justify-content:space-evenly; */
+            gap: 15px;
+            width: 120px;
+            height: 100px;
+        }
+
+     }
+
+     @media screen and (max-width:700px){
+        .Logos{
+            grid-template-columns: auto auto;
+        }
+
+        .LogoScrollTag , .Logos , .LogoScroll{
+            min-height:100vh;
+       }
+
+       .LogoArrow{
+        display:none;
+       }
+     }
+
+
+     @media screen and (max-width:600px) {
+        .Lbody{
+            justify-content:space-between;
+        }
+
+        .Lseats{
+            grid-template-columns:auto auto;
+            gap: 30px;
+            justify-content:center;
+        }
+
+     }
+
+
+
+     @media screen and (max-width:550px) {
+        .LogoOption{
+            width:98%;
+            padding: 0px 10px;
+        }
+    
+        .LogoOption button{
+            padding:5px 10px;
+            height: 35px;
+            width: 80px;
+            font-size: 10px;
+        }
+
+        .LogoPage{
+            gap:15px;
+        }
+
+        .Lbody{
+            grid-template-columns:auto auto;
+            justify-content: center;
+            column-gap: 50px;
+        }
+
+        .Lbody-1{
+            width: 100px;
+        }
+
+        .Lbody-1 p{
+            font-size: 13px;
+        }
+
+        .Lbody-1 img{
+            width:100%;
+            height:60px;
+        }
+
+     }
+
+
+     @media screen and (max-width:450px) {
+        .LogoOption{
+            width:98%;
+            padding: 0px 10px;
+            gap: 10px;
+        }
+
+        .Lpopular{
+            min-height:65vh;
+        }
+
+        .LpopularBody{
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .LogoOption button{
+            padding:0px;
+            height: 30px;
+            width: 70px;
+            font-size:8px;
+        }
+
+        .LpopularBody a{
+            width: 130px;
+            height: 60px;
+            font-size: 13px;
+        }
+
+        .Lseats{
+            gap: 20px;
+        }
+
+     }
+
+     @media screen and (max-width:400px) {
+        .LPrice a{
+            width: 140px;
+            height: 75px;
+        }
+     }
+
+    
+/* Logo Page Responsive closes
